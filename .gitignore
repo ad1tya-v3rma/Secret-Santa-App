@@ -1,0 +1,4 @@
+#ignore these while commiting
+*.log
+/ui/.angular
+/ui/node_modules

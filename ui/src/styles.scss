@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    justify-content: center;
+}
+
+.mat-mdc-unelevated-button>.mat-icon,
+.mat-mdc-raised-button>.mat-icon,
+.mat-mdc-outlined-button>.mat-icon {
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,23 @@
+<mat-card title="Login form" class="mat-card-style">
+    <mat-card-title>Admin Login</mat-card-title>
+    <mat-card-content>
+        <form #loginForm="ngForm" class="form">
+            <mat-form-field class="mat-form-field-style">
+                <input matInput type="email" #email placeholder="email">
+            </mat-form-field>
+            <mat-form-field class="mat-form-field-style">
+                <input matInput #pass [type]="hide ? 'password' : 'text'" placeholder="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="checkLogin(email.value, pass.value)">Login</button>
+        </form>
+        <!-- <div>{{loginForm.value| json}}</div> -->
+    </mat-card-content>
+</mat-card>
+<!-- <mat-form-field>
+    <input matInput type="text" ngModel #input="ngModel" placeholder="mail">
+</mat-form-field>
+<div>{{input.value | json}}</div> -->

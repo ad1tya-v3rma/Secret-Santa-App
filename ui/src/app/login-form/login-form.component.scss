@@ -1,0 +1,24 @@
+.mat-card {}
+
+.mat-card-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.form {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    text-align: center;
+}
+
+.mat-form-field-style {
+    width: 300px;
+}
